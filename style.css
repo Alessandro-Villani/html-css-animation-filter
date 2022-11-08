@@ -153,6 +153,7 @@
     width: 60px;
     height: 20px;
 }
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
@@ -160,4 +161,30 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: back-and-forth .5s linear alternate 2;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: back-and-forth-bottom .5s linear alternate 2;
+}
+
+@keyframes back-and-forth {
+    from{
+        left: 10%;
+    }
+    to{
+        left: 60%;
+    }
+}
+
+@keyframes back-and-forth-bottom {
+    from{
+        right: 20%;
+    }
+    to{
+        right: 60%;
+    }
 }
