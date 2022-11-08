@@ -188,3 +188,65 @@
         right: 60%;
     }
 }
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: turn-around-top 1s linear;
+}
+
+@keyframes turn-around-top{
+    0%{
+        left: 10%;
+        top: -10px;
+    }
+    33.31%{
+        left: 100%;
+        top: -10px;
+    }
+    46.3%{
+        left: 100%;
+        top: 100%;
+    }
+    83.32%{
+        left: -5%;
+        top: 100%;
+    }
+    96.3%{
+        left: -5%;
+        top: -10px;
+    }
+    100%{
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: turn-around-bottom 1s linear;
+}
+
+@keyframes turn-around-bottom{
+    0%{
+        right: 20%;
+        bottom: -10px;
+    }
+    29.61%{
+        right: 80%;
+        bottom: -10px;
+    }
+    42.6%{
+        right: 80%;
+        bottom: 100%;
+    }
+    79.62%{
+        right: -5%;
+        bottom: 100%;
+    }
+    92.6%{
+        right: -5%;
+        bottom: -10px;
+    }
+    100%{
+        right: 20%;
+        bottom: -10px;
+    }
+}
